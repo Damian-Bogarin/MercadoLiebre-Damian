@@ -1,0 +1,121 @@
+
+
+/*banner*/
+
+ .banner { 
+    
+   width: 100vw;
+   margin-left: 0;
+   padding-left: 0;
+   box-sizing: content-box;
+} 
+
+
+
+
+/*section*/
+
+#productos-all{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.home .product{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.home .section-title {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.home .card {
+    background-color: white;
+    margin-bottom: 10px;
+    transition: box-shadow 2000ms;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);  
+
+}
+
+.home .card .card-content {
+    border-top: solid var(--light-grey);
+    padding: 15px;
+    position: relative; /*al contenedor padre hay q ponerle esto primero*/
+}
+
+.home .card .card-content .icon-truck { /*circulo del camion*/
+    border: 1px solid var(--green);
+    border-radius: 50%;
+    width: fit-content; /*para que ese borde encierre solo el camion*/
+    padding: 5px;
+    position: absolute; /*con esto se moveria el camion, el elemento*/
+    top: -15px;
+    right: 20px;
+}
+
+.home .card .card-content .icon-truck i {
+    color: var(--green);
+    font-size: 16px;
+    transition: 3000ms;
+}
+.home .card .card-content .icon-truck i:hover {
+    transform: rotateZ(-90deg);
+}
+
+.home .card .card-content .product-info {
+    display: flex;
+    
+    padding-top: 5px;
+}
+
+.home .card .card-content .product-info p:nth-child(1) {
+    flex-grow: 0.3;
+}
+
+.home .card .card-content .product-info p:nth-child(2) {
+    color: var(--green);
+    font-size: 14px;
+    flex-grow: 0.7;
+}
+
+.home .card .card-content .product-name {
+    display: none;
+    color: var(--dark-grey);
+    margin-top: 15px;
+    font-size: 15px;
+}
+ .home .card .card-content .product-name {
+        display: block;
+    } 
+
+
+    /* Tablet*/
+
+    /*home*/
+
+@media (min-width: 361px) {
+   /*  .home .card { 
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+    } */
+    
+}
+
+@media (min-width: 769px) {
+
+    #productos-all{
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+    }
+
+    .card{
+        box-sizing: border-box;
+        margin: 0 10%;
+    }
+
+}
+

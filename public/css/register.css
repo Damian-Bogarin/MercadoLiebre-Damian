@@ -1,0 +1,58 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 10vw;
+    background-color: white;
+    padding: 2px;
+    border-radius: 5px;
+
+
+}
+
+#input-form{
+border: none;
+}
+
+.formulario div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+#check-box{
+    display: flex;
+    flex-direction: column;
+}
+
+#foto-perfil{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#botones{
+    display: flex;
+   flex-direction: column;
+   padding: 0 25% ;
+   
+
+}
+
+#botones button{
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#submit-button{
+    background-color: blue;
+    color: white;
+}
+#delete-button{
+    background-color: red;
+    color: white;
+}
+
+.error-message{
+    display: none;
+    color: red;
+    /* display: none; */
+}
