@@ -22,14 +22,16 @@
             </div>
 
             
+            <form action="" method="GET">
                 <div class="search-bar">
                 <!--aqui la barra, dentro escribo lo que busco-->
-                <input type="text" placeholder="Buscar productos..." >
-                 <button>
+               
+                <input type="text" placeholder="Buscar productos..." name="search" >
+                 <button type="submit">
                 <i class="fas fa-search"></i>
                 </button>
                 </div>
-            
+            </form>
                
            
                 <p class="quota"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas sin tarjeta de crédito</p>
@@ -45,7 +47,7 @@
             </ul>
             <ul>
                 <li><a href="localhost:3000/register">Creá tu cuenta </a><i class="far fa-address-card"></i></li>
-                <li><a href="">Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="/login">Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
                 <li><a href="">Mis compras </a><i class="fas fa-shopping-basket"></i></li>
                 <br>
 
@@ -65,8 +67,8 @@
         <form action="" method="GET" class="formulario">
             <h3>Usuario: </h3>
             <div> 
-                <label for="nombre" id="input-form">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
+                <label for="nombre" id="input-form">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" >
                 <span class="error-message">el nombre no es valido</span>
             </div>
             <div>
@@ -125,8 +127,8 @@
             <span class="error-message">Contraseña no valida</span>
             </div>
             <div> 
-                <label for="pass">Comfirmar Contraseña: </label>
-                <input type="password" name="pass" id="pass"> 
+                <label for="passconfirm">Comfirmar Contraseña: </label>
+                <input type="password" name="passconfirm" id="passconfirm"> 
                 <span class="error-message">Las contraseñas no coinciden</span>
             </div>
             <div id="botones">
